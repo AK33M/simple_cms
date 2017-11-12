@@ -1,12 +1,15 @@
 Rails.application.routes.draw do
-  # get 'home/edit_page'
 
-  # root 'demo#index'
+  root 'demo#index'
 
-  # get 'demo/index'
+  get 'demo/index'
+  get 'demo/hello'
+  get 'demo/other_hello'
+  get 'demo/lynda'
+  get 'home/edit_page'  
 
   # default route (might be deprecated in the future)
-  get ':controller(/:action(/:id))'
+  # get ':controller(/:action(/:id))'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
